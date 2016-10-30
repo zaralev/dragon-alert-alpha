@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# version - 07
+# version - 11
 
 CACHE:
 
@@ -10,6 +10,7 @@ css-normalize.css
 
 # IMAGES
 img/logo.png
+img/map.png
 img/icon-57x57.png
 img/icon-114x114.png
 img/startup-320x460.png

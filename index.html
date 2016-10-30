@@ -3,9 +3,10 @@
 <html lang="en" manifest="cache.manifest">
 
 <head>
-	<title>WGF</title>
+	<title>DragonALERT</title>
 	<!-- META -->
 	<meta charset="utf-8">
+	<meta name="apple-mobile-web-app-title" content="DragonALERT">
 	<meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width, maximum-scale=1.0" />
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
@@ -30,6 +31,17 @@
 
 	<div id="mobile">
 		<div id="header"><img src="img/logo.png" /></div>
+		<div id="map"><img src="img/map.png" /></div>
+		<div id="sort">
+			<span id="open">+</span>
+			<span id="close">x</span>
+			<ul>
+				<li id="week" onclick="expand()">Last Week</li>
+				<li id="month" onclick="expand()">Last Month</li>
+				<li id="year" onclick="expand()">Last Year</li>
+			</ul>
+
+		</div>
 		<div id="call">
 			<ul>
 				<li onclick="emergency()">Call 911</li>
@@ -77,10 +89,35 @@
 		function emergency() {
 			document.getElementById("emergency").style.display = 'block';
 		}
+
 		function escort() {
 			document.getElementById("escort").style.display = 'block';
 		}
+		var x = 0;
+		var w = 1;
+		var m = 0;
+		var y = 0;
 
+		function expand() {
+			if (x == 0) {
+				document.getElementById("open").style.display = 'none';
+				document.getElementById("close").style.display = 'block';
+				document.getElementById("week").style.display = 'block';
+				document.getElementById("month").style.display = 'block';
+				document.getElementById("year").style.display = 'block';
+				document.getElementById("sort").style.bottom = '204px';
+				x += 1;
+			} else {
+				document.getElementById("open").style.display = 'block';
+				document.getElementById("close").style.display = 'none';
+				document.getElementById("week").style.display = 'block';
+				document.getElementById("month").style.display = 'none';
+				document.getElementById("year").style.display = 'none';
+				document.getElementById("sort").style.bottom = '68px';
+				x -= 1;
+			}
+
+		}
 	</script>
 	<script src="js-add2home.js"></script>
 	<script src="js-main.js"></script>

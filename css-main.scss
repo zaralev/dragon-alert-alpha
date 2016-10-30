@@ -146,6 +146,7 @@ $heading: 'Roboto Condensed', sans-serif;
 body {
     background-color: #ffffff;
     font-family: $body;
+    overflow: hidden;
     @media only screen and (orientation:portrait ) {
         background-color: $grey;
     }
@@ -200,6 +201,75 @@ body {
         height: 58px;
         padding: 0.4em;
     }
+}
+
+#map {
+    img {
+        width: 120%;
+    }
+}
+
+#sort {
+    position: fixed;
+    bottom: 68px;
+    left: 0;
+    width: 100%;
+    height: 68px;
+
+    ul {
+        li {
+            text-align: center;
+            display: block;
+            height: 68px;
+            padding-top: 22px;
+            font-family: $heading;
+            text-transform: uppercase;
+            font-size: 1.2em;
+            color: $blue;
+            cursor: pointer;
+            border-top: 2px solid rgba(#000000, 0.1);
+            background-color: $grey;
+
+            // &:last-child {
+            //     border-bottom: 2px solid rgba(#000000, 0.1);
+            // }
+        }
+    }
+}
+
+#month {
+    display: none;
+}
+
+#year {
+    display: none;
+}
+
+#open {
+    font-family: $body;
+    font-size: 2em;
+    position: fixed;
+    bottom: 70px;
+    right: 0;
+    background-color: none;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    color: rgba(#000000, 0.3);
+    display:block;
+}
+#close {
+    font-family: $body;
+    font-size: 2em;
+    position: fixed;
+    bottom: 70px;
+    right: 0;
+    background-color: none;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    color: rgba(#000000, 0.3);
+    display:none;
 }
 
 #call {
@@ -263,7 +333,7 @@ body {
 #box-one {
     position: relative;
     top: 25vh;
-    width: 80%;
+    width: 95%;
     margin: 0 auto;
     text-align: center;
     background: #fff;
@@ -276,7 +346,7 @@ body {
             font-size: 1.5em;
 
             &:first-child {
-                padding: 6em 1em 4em 1em;
+                padding: 6em 1em 4em;
                 font-family: $body;
                 text-transform: none;
                 font-size: 1em;
@@ -291,6 +361,7 @@ body {
                 width: 42%;
                 padding: 1em;
                 cursor: pointer;
+
                 &:active,
                 &:hover {
                     background-color: $grey;
@@ -320,12 +391,12 @@ body {
     font-family: $heading;
     font-size: 2.4em;
     position: absolute;
-    top: 10px;
+    top: 20px;
     right: 10px;
-    background-color:none;
-    cursor:pointer;
-    width: 40px;
-    height: 40px;
+    background-color: none;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
     color: $blue;
     // background-color: #f00;
 }
@@ -334,16 +405,15 @@ body {
     font-family: $heading;
     font-size: 2.4em;
     position: absolute;
-    top: 10px;
+    top: 20px;
     right: 10px;
-    background-color:none;
-    cursor:pointer;
-    width: 40px;
-    height: 40px;
+    background-color: none;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
     color: $blue;
     // background-color: #f00;
 }
-
 
 #escort {
     background-color: rgba(#000000, 0.5);
@@ -356,7 +426,7 @@ body {
 #box-two {
     position: relative;
     top: 25vh;
-    width: 80%;
+    width: 95%;
     margin: 0 auto;
     text-align: center;
     background: #fff;
@@ -369,7 +439,7 @@ body {
             font-size: 1.5em;
 
             &:first-child {
-                padding: 6em 1em 4em 1em;
+                padding: 6em 1em 4em;
                 font-family: $body;
                 text-transform: none;
                 font-size: 1em;
@@ -384,6 +454,7 @@ body {
                 width: 42%;
                 padding: 1em;
                 cursor: pointer;
+
                 &:active,
                 &:hover {
                     background-color: $grey;
