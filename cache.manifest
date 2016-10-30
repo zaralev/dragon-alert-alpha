@@ -9,9 +9,7 @@ css-main.css
 css-normalize.css
 
 # IMAGES
-img/face_frown.svg
-img/face_smile.png
-img/face_smile.svg
+img/logo.png
 img/icon-57x57.png
 img/icon-114x114.png
 img/startup-320x460.png
