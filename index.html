@@ -36,36 +36,55 @@
 			<span id="open">+</span>
 			<span id="close">--</span>
 			<ul>
-				<li id="week" onclick="expand()">Last Week</li>
-				<li id="month" onclick="expand()">Last Month</li>
 				<li id="year" onclick="expand()">Last Year</li>
+				<li id="month" onclick="expand()">Last Month</li>
+				<li id="week" onclick="expand()">Last Week</li>
+
 			</ul>
 
 		</div>
+
+		<!--preview-->
+		<img onclick="activeClick()" src="img/active.png" id="active" />
+
+		<div class="black">
+			<div id="activeInfo">
+				Info aksdjfl;kajdfl;ajsdl;fjkal;s
+			</div>
+		</div>
+
+		<img src="img/inactive.png" class="inactive" id="inactive-one" />
+		<img src="img/inactive.png" class="inactive" id="inactive-two" />
+
+
 		<div id="call">
 			<ul>
 				<li onclick="emergency()">Call 911</li>
 				<li onclick="escort()">Call Drexel Escort</li>
 			</ul>
 		</div>
-		<div id="emergency">
+		<div class="black" id="emergency">
 			<div id="box-one">
 				<!-- <span id="x" onclick="getElementById('emergency').style.display = 'none'">x</span> -->
 				<ul>
 					<li>Do you want to call 911?</li>
 					<li onclick="getElementById('emergency').style.display = 'none'">No</li>
-					<a href="tel:+1-513-254-6233"><li>Yes</li></a>
+					<a href="tel:+1-513-254-6233">
+						<li>Yes</li>
+					</a>
 				</ul>
 			</div>
 		</div>
 
-		<div id="escort">
+		<div class="black" id="escort">
 			<div id="box-two">
 				<!-- <span id="x2" onclick="getElementById('escort').style.display = 'none'">x</span> -->
 				<ul>
 					<li>Do you want to call a Drexel Escort?</li>
 					<li onclick="getElementById('escort').style.display = 'none'">No</li>
-					<a href="tel:+1-513-254-6233"><li>Yes</li></a>
+					<a href="tel:+1-513-254-6233">
+						<li>Yes</li>
+					</a>
 				</ul>
 			</div>
 		</div>
@@ -86,6 +105,15 @@
 			touchIcon: true
 		};
 
+		document.addEventListener('touchmove', function(e) {
+			e.preventDefault();
+		}, false);
+
+		function activeClick() {
+			document.getElementById("activeInfo").style.display = 'block';
+			console.log("ok");
+		}
+
 		function emergency() {
 			document.getElementById("emergency").style.display = 'block';
 		}
@@ -93,6 +121,7 @@
 		function escort() {
 			document.getElementById("escort").style.display = 'block';
 		}
+
 		var x = 0;
 
 		function expand() {
