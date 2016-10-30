@@ -27,27 +27,45 @@
 
 <body onload="pageSetUp()">
 	<!-- PAGE CONTENT -->
-	<div id="wrapper">
-		<button type="button" name="about_btn" id="about_btn" onclick="jmp2LocalPage('about.html')">About</button>
-		<!-- INTERNAL LINKS -->
-		<div id="display">
-			<div id="result">
+
+	<div id="mobile">
+		<div id="header"><img src="img/logo.png" /></div>
+		<div id="call">
+			<ul>
+				<li onclick="emergency()">Call 911</li>
+				<li onclick="escort()">Call Drexel Escort</li>
+			</ul>
+		</div>
+		<div id="emergency">
+			<div id="box-one">
+				<span id="x" onclick="getElementById('emergency').style.display = 'none'">x</span>
+				<ul>
+					<li>Do you want to call 911?</li>
+					<li>No</li>
+					<li>Yes</li>
+				</ul>
 			</div>
 		</div>
-		<form oninput="hm_result.value=parseInt(howmany.value)">
-			<div id="wgf">
-				<button type="button" name="wgf_btn" id="wgf_btn" onclick="pickSomeOne()">Who Goes First?</button>
+
+		<div id="escort">
+			<div id="box-two">
+				<span id="x2" onclick="getElementById('escort').style.display = 'none'">x</span>
+				<ul>
+					<li>Do you want to call a Drexel Escort?</li>
+					<li>No</li>
+					<li>Yes</li>
+				</ul>
 			</div>
-			<div id="gather">
-				2 <input type="range" name="howmany" id="howmany" min="2" max="20" value="2"> 20
-				<input type="text" name="hm_result" id="hm_result" value="2" disabled>
-			</div>
-		</form>
+		</div>
 	</div>
-	<div id="widescreen">
-		<p>To witness all this AWESOMENESS!</p>
-		<h1>ROTATE your device to PORTRAIT view.</h1>
+
+
+	<div id="desktop">
+		<img src="img/logo.png" /><br> Rotate phone back to portrait mode!
 	</div>
+
+
+
 	<!-- JAVASCRIPT-->
 	<script src="js-refresh-manifest.js" type="text/javascript"></script>
 	<script type="text/javascript">
@@ -55,6 +73,14 @@
 		var addToHomeConfig = {
 			touchIcon: true
 		};
+
+		function emergency() {
+			document.getElementById("emergency").style.display = 'block';
+		}
+		function escort() {
+			document.getElementById("escort").style.display = 'block';
+		}
+
 	</script>
 	<script src="js-add2home.js"></script>
 	<script src="js-main.js"></script>
