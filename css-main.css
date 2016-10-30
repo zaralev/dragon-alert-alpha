@@ -181,6 +181,8 @@ body {
   left: 0; }
   #header img {
     height: 58px;
+    top: 5px;
+    position: relative;
     padding: 0.4em; }
 
 #map img {
@@ -236,13 +238,20 @@ body {
   margin: 0 auto;
   text-align: center;
   background: #fff; }
+  #box-one ul a {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    color: #07294D;
+    cursor: pointer; }
   #box-one ul li {
     list-style-type: none;
     font-family: "Roboto Condensed", sans-serif;
     text-transform: uppercase;
     font-size: 1.5em; }
     #box-one ul li:first-child {
-      padding: 6em 1em 4em;
+      padding: 4em 1em;
       font-family: "Roboto", sans-serif;
       text-transform: none;
       font-size: 1em; }
@@ -265,7 +274,10 @@ body {
       padding: 1em;
       color: #07294D;
       background-color: #FFC600;
-      cursor: pointer; }
+      cursor: pointer;
+      font-size: 1.5em;
+      font-family: "Roboto Condensed", sans-serif;
+      text-transform: uppercase; }
       #box-one ul li:last-child:active, #box-one ul li:last-child:hover {
         background-color: #ffdb5e; }
 
@@ -301,6 +313,13 @@ body {
   top: 0;
   display: none; }
 
+a,
+a:active,
+a:hover,
+a:visited {
+  color: #07294D;
+  text-decoration: none; }
+
 #box-two {
   position: relative;
   top: 25vh;
@@ -308,13 +327,20 @@ body {
   margin: 0 auto;
   text-align: center;
   background: #fff; }
+  #box-two ul a {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    color: #07294D;
+    cursor: pointer; }
   #box-two ul li {
     list-style-type: none;
     font-family: "Roboto Condensed", sans-serif;
     text-transform: uppercase;
     font-size: 1.5em; }
     #box-two ul li:first-child {
-      padding: 6em 1em 4em;
+      padding: 4em 1em;
       font-family: "Roboto", sans-serif;
       text-transform: none;
       font-size: 1em; }
@@ -337,7 +363,10 @@ body {
       padding: 1em;
       color: #07294D;
       background-color: #FFC600;
-      cursor: pointer; }
+      cursor: pointer;
+      font-size: 1.5em;
+      font-family: "Roboto Condensed", sans-serif;
+      text-transform: uppercase; }
       #box-two ul li:last-child:active, #box-two ul li:last-child:hover {
         background-color: #ffdb5e; }
 
@@ -382,7 +411,8 @@ body {
     width: 50px;
     height: 50px;
     color: rgba(0, 0, 0, 0.3);
-    display: none; }
+    display: none;
+    letter-spacing: -0.038em; }
   #sort #month {
     display: none; }
   #sort #year {

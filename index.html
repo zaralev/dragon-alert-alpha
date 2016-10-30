@@ -34,7 +34,7 @@
 		<div id="map"><img src="img/map.png" /></div>
 		<div id="sort">
 			<span id="open">+</span>
-			<span id="close">x</span>
+			<span id="close">--</span>
 			<ul>
 				<li id="week" onclick="expand()">Last Week</li>
 				<li id="month" onclick="expand()">Last Month</li>
@@ -50,22 +50,22 @@
 		</div>
 		<div id="emergency">
 			<div id="box-one">
-				<span id="x" onclick="getElementById('emergency').style.display = 'none'">x</span>
+				<!-- <span id="x" onclick="getElementById('emergency').style.display = 'none'">x</span> -->
 				<ul>
 					<li>Do you want to call 911?</li>
-					<li>No</li>
-					<li>Yes</li>
+					<li onclick="getElementById('emergency').style.display = 'none'">No</li>
+					<a href="tel:+1-513-254-6233"><li>Yes</li></a>
 				</ul>
 			</div>
 		</div>
 
 		<div id="escort">
 			<div id="box-two">
-				<span id="x2" onclick="getElementById('escort').style.display = 'none'">x</span>
+				<!-- <span id="x2" onclick="getElementById('escort').style.display = 'none'">x</span> -->
 				<ul>
 					<li>Do you want to call a Drexel Escort?</li>
-					<li>No</li>
-					<li>Yes</li>
+					<li onclick="getElementById('escort').style.display = 'none'">No</li>
+					<a href="tel:+1-513-254-6233"><li>Yes</li></a>
 				</ul>
 			</div>
 		</div>
@@ -94,9 +94,6 @@
 			document.getElementById("escort").style.display = 'block';
 		}
 		var x = 0;
-		var w = 1;
-		var m = 0;
-		var y = 0;
 
 		function expand() {
 			if (x == 0) {
