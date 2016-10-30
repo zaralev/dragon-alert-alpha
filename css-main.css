@@ -186,57 +186,6 @@ body {
 #map img {
   width: 120%; }
 
-#sort {
-  position: fixed;
-  bottom: 68px;
-  left: 0;
-  width: 100%;
-  height: 68px; }
-  #sort ul li {
-    text-align: center;
-    display: block;
-    height: 68px;
-    padding-top: 22px;
-    font-family: "Roboto Condensed", sans-serif;
-    text-transform: uppercase;
-    font-size: 1.2em;
-    color: #07294D;
-    cursor: pointer;
-    border-top: 2px solid rgba(0, 0, 0, 0.1);
-    background-color: #E1E1E0; }
-
-#month {
-  display: none; }
-
-#year {
-  display: none; }
-
-#open {
-  font-family: "Roboto", sans-serif;
-  font-size: 2em;
-  position: fixed;
-  bottom: 70px;
-  right: 0;
-  background-color: none;
-  cursor: pointer;
-  width: 50px;
-  height: 50px;
-  color: rgba(0, 0, 0, 0.3);
-  display: block; }
-
-#close {
-  font-family: "Roboto", sans-serif;
-  font-size: 2em;
-  position: fixed;
-  bottom: 70px;
-  right: 0;
-  background-color: none;
-  cursor: pointer;
-  width: 50px;
-  height: 50px;
-  color: rgba(0, 0, 0, 0.3);
-  display: none; }
-
 #call {
   width: 100%;
   height: 68px;
@@ -275,6 +224,7 @@ body {
 #emergency {
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
+  top: 0;
   height: 100vh;
   position: fixed;
   display: none; }
@@ -348,6 +298,7 @@ body {
   width: 100%;
   height: 100vh;
   position: fixed;
+  top: 0;
   display: none; }
 
 #box-two {
@@ -389,5 +340,52 @@ body {
       cursor: pointer; }
       #box-two ul li:last-child:active, #box-two ul li:last-child:hover {
         background-color: #ffdb5e; }
+
+#sort {
+  position: fixed;
+  bottom: 68px;
+  left: 0;
+  width: 100%;
+  height: 68px; }
+  #sort ul li {
+    text-align: center;
+    display: block;
+    height: 68px;
+    padding-top: 22px;
+    font-family: "Roboto Condensed", sans-serif;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    color: #07294D;
+    cursor: pointer;
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+    background-color: #E1E1E0; }
+  #sort #open {
+    font-family: "Roboto", sans-serif;
+    font-size: 2em;
+    position: fixed;
+    bottom: 70px;
+    right: 0;
+    background-color: none;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    color: rgba(0, 0, 0, 0.3);
+    display: block; }
+  #sort #close {
+    font-family: "Roboto", sans-serif;
+    font-size: 2em;
+    position: fixed;
+    bottom: 70px;
+    right: 0;
+    background-color: none;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    color: rgba(0, 0, 0, 0.3);
+    display: none; }
+  #sort #month {
+    display: none; }
+  #sort #year {
+    display: none; }
 
 /*# sourceMappingURL=css-main.css.map */
