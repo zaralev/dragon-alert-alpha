@@ -309,7 +309,8 @@ body {
   height: 100vh;
   position: fixed;
   top: 0;
-  display: none; }
+  display: none;
+  z-index: 1001; }
 
 a,
 a:active,
@@ -373,7 +374,8 @@ a:visited {
   bottom: 68px;
   left: 0;
   width: 100%;
-  height: 68px; }
+  height: 68px;
+  z-index: 1000; }
   #sort ul li {
     text-align: center;
     display: block;
