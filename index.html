@@ -30,7 +30,14 @@
 	<!-- PAGE CONTENT -->
 
 	<div id="mobile">
-		<div id="header"><img src="img/logo.png" /></div>
+		<div id="header"><img src="img/logo.png" onclick="showCredits()" style="cursor:pointer;"/></div>
+
+			<div id="credits">
+				<div class="creditsx" onclick="getElementById('credits').style.display = 'none'">x</div>
+				<h1>Credits:</h1>
+				App design and development<br><br>- <a href="http://zara-leventhal.com" style="color:#FFC600;">Zara Leventhal</a>
+			</div>
+
 		<div id="map"><img src="img/map.png" /></div>
 		<div id="sort">
 			<span id="open">+</span>
@@ -128,6 +135,11 @@
 		function escort() {
 			document.getElementById("escort").style.display = 'block';
 		}
+
+		function showCredits() {
+			document.getElementById("credits").style.display = 'block';
+		}
+
 
 		var x = 0;
 

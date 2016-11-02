@@ -507,6 +507,35 @@ a:visited {
   font-weight: bolder;
   font-size: 1.1em; }
 
+#credits {
+  display: none;
+  position: fixed;
+  top: 68px;
+  width: 100%;
+  text-align: center;
+  background: #051d36;
+  height: 100vh;
+  font-size: 1.2em;
+  z-index: 20000;
+  padding: 2em;
+  color: #fff; }
+  #credits h1 {
+    color: #FFC600;
+    font-family: "Roboto Condensed", sans-serif;
+    text-transform: uppercase;
+    font-size: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em; }
+
+.creditsx {
+  position: fixed;
+  right: 30px;
+  top: 78px;
+  color: #FFC600;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 2.5em;
+  cursor: pointer; }
+
 #here {
   width: 20px;
   position: fixed;

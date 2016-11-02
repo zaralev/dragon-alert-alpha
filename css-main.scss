@@ -550,7 +550,7 @@ a:visited {
     margin: 0 auto;
     text-align: center;
     background: #fff;
-    font-size:1.1em;
+    font-size: 1.1em;
 
     &::before {
         background-image: url("img/active.png");
@@ -618,6 +618,38 @@ a:visited {
     text-transform: uppercase;
     font-weight: bolder;
     font-size: 1.1em;
+}
+
+#credits {
+    display: none;
+    position: fixed;
+    top: 68px;
+    width: 100%;
+    text-align: center;
+    background: #051d36;
+    height: 100vh;
+    font-size: 1.2em;
+    z-index:20000;
+    padding: 2em;
+    color: #fff;
+    h1 {
+      color: $yellow;
+      font-family: $heading;
+      text-transform: uppercase;
+      font-size: 2em;
+      margin-top: 1em;
+      margin-bottom: 1em;
+    }
+
+}
+.creditsx {
+  position:fixed;
+  right: 30px;
+  top: 78px;
+  color: $yellow;
+  font-family: $heading;
+  font-size: 2.5em;
+  cursor: pointer;
 }
 
 #here {
