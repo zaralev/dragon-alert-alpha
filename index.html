@@ -47,9 +47,15 @@
 		<!--preview-->
 		<img onclick="activeClick()" src="img/active.png" id="active" />
 
-		<div class="black">
-			<div id="activeInfo">
-				Info aksdjfl;kajdfl;ajsdl;fjkal;s
+		<div class="black" id="activeInfo">
+			<div id="activeInfobox">
+				<div class="titlebox">Active Alert</div>
+				<div class="closex" onclick="getElementById('activeInfo').style.display = 'none'">x</div>
+				<div class="desc">
+					<span class="date">Thursday, October 27th</span>
+					<span class="location">37th and Spring Garden</span>
+					<span class="description"><span class="type">Robbery</span> - Point of gun. Police on scene. Avoid area.</span>
+				</div>
 			</div>
 		</div>
 
@@ -68,7 +74,7 @@
 			<div id="box-one">
 				<!-- <span id="x" onclick="getElementById('emergency').style.display = 'none'">x</span> -->
 				<ul>
-					<li>Do you want to call 911?</li>
+					<li>Call 911?</li>
 					<li onclick="getElementById('emergency').style.display = 'none'">No</li>
 					<a href="tel:+1-513-254-6233">
 						<li>Yes</li>
@@ -81,7 +87,7 @@
 			<div id="box-two">
 				<!-- <span id="x2" onclick="getElementById('escort').style.display = 'none'">x</span> -->
 				<ul>
-					<li>Do you want to call a Drexel Escort?</li>
+					<li>Call a Drexel Escort?</li>
 					<li onclick="getElementById('escort').style.display = 'none'">No</li>
 					<a href="tel:+1-513-254-6233">
 						<li>Yes</li>

@@ -143,12 +143,13 @@ $heading: 'Roboto Condensed', sans-serif;
     box-sizing: border-box;
 }
 
-html,body {
-  overflow:hidden;
+body,
+html {
+    overflow: hidden;
 }
 
 body {
-  position:relative;
+    position: relative;
     background-color: #ffffff;
     font-family: $body;
     overflow: hidden;
@@ -205,16 +206,17 @@ body {
     img {
         height: 58px;
         top: 5px;
-        position:relative;
+        position: relative;
         padding: 0.4em;
     }
 }
 
 #map {
-  overflow:hidden;
+    overflow: hidden;
+
     img {
         // width:680px;
-        max-height:100vh;
+        max-height: 100vh;
     }
 }
 
@@ -268,7 +270,6 @@ body {
     }
 }
 
-
 #box-one {
     position: relative;
     top: 25vh;
@@ -279,7 +280,6 @@ body {
 
     ul {
         a {
-
             display: inline-block;
             position: absolute;
             right: 0;
@@ -298,7 +298,7 @@ body {
                 padding: 4em 1em;
                 font-family: $body;
                 text-transform: none;
-                font-size: 1em;
+                font-size: 1.5em;
             }
 
             &:nth-child(2) {
@@ -329,6 +329,7 @@ body {
                 font-size: 1.5em;
                 font-family: $heading;
                 text-transform: uppercase;
+
                 &:active,
                 &:hover {
                     background-color: #ffdb5e;
@@ -367,15 +368,14 @@ body {
 }
 
 .black {
-    background-color: rgba(#000000, 0.5);
+    background-color: rgba(#000000, 0.7);
     width: 100%;
     height: 100vh;
     position: fixed;
     top: 0;
     display: none;
-    z-index:1001;
+    z-index: 1001;
 }
-
 
 a,
 a:active,
@@ -395,7 +395,6 @@ a:visited {
 
     ul {
         a {
-
             display: inline-block;
             position: absolute;
             right: 0;
@@ -414,7 +413,7 @@ a:visited {
                 padding: 4em 1em;
                 font-family: $body;
                 text-transform: none;
-                font-size: 1em;
+                font-size: 1.5em;
             }
 
             &:nth-child(2) {
@@ -445,6 +444,7 @@ a:visited {
                 font-size: 1.5em;
                 font-family: $heading;
                 text-transform: uppercase;
+
                 &:active,
                 &:hover {
                     background-color: #ffdb5e;
@@ -460,7 +460,7 @@ a:visited {
     left: 0;
     width: 100%;
     height: 68px;
-    z-index:1000;
+    z-index: 1000;
 
     ul {
         li {
@@ -518,45 +518,111 @@ a:visited {
         display: none;
     }
 }
-
 /* PREVIEW TEST */
-
 #active {
-  position:fixed;
-  top: 24vh;
-  left: 2em;
-  width: 100px;
+    position: fixed;
+    top: 24vh;
+    left: 2em;
+    width: 100px;
+    cursor: pointer;
 }
 
 .inactive {
-  width: 30px;
-    position:fixed;
+    width: 30px;
+    position: fixed;
+    cursor: pointer;
 }
 
 #inactive-one {
-top: 40vh;
-left: 20em;
+    top: 40vh;
+    left: 20em;
 }
 
 #inactive-two {
-top: 17vh;
-left: 15em;
+    top: 17vh;
+    left: 15em;
 }
 
-#activeInfo {
-      position: relative;
-      top: 25vh;
-      width: 95%;
-      margin: 0 auto;
-      text-align: center;
-      background: #fff;
-      display:none;
+#activeInfobox {
+    position: relative;
+    top: 25vh;
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+    background: #fff;
+    font-size:1.1em;
+
+    &::before {
+        background-image: url("img/active.png");
+        background-size: 80px 80px;
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        content: "";
+        position: absolute;
+        top: -12vh;
+        left: 40%;
+    }
+}
+
+.titlebox {
+    padding: 0.7em;
+    background-color: $blue;
+    color: #fff;
+    font-family: $heading;
+    text-transform: uppercase;
+    font-size: 1.6em;
+}
+
+.closex {
+    position: fixed;
+    right: 15px;
+    top: 27.6vh;
+    color: $yellow;
+    font-size: 1.6em;
+    font-family: $heading;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+}
+
+.desc {
+    padding: 2em;
+}
+
+.date {
+    display: block;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.1em;
+    margin: -0.5em 0 1.8em;
+}
+
+.location {
+    display: block;
+    font-size: 1.3em;
+    text-align: left;
+    font-weight: bolder;
+    margin-bottom: 0.7em;
+}
+
+.description {
+    display: block;
+    text-align: left;
+    line-height: 1.3em;
+}
+
+.type {
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 1.1em;
 }
 
 #here {
-  width: 20px;
-    position:fixed;
+    width: 20px;
+    position: fixed;
     top: 51vh;
     left: 12em;
-
 }
